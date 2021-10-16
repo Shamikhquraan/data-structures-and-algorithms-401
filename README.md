@@ -2,4 +2,4 @@
 
 name           | link
 -------------  |------
-array-reverse  | (click here)[array-reverse.png]
+array-reverse  | [click here](array-reverse.png)
