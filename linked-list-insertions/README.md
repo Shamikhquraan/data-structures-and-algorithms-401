@@ -6,6 +6,8 @@
 
 - Whiteboard Process:
 
+![](linked-list.png)
+
 - Big O : space O(n)
 
 
