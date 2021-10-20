@@ -24,6 +24,7 @@ public class Library {
         System.out.println(newList.kth(2));
         System.out.println(newList.kth(5));
         System.out.println(newList.kth(20));
+      //  System.out.println(newList.kth(3));
 
 
     }
