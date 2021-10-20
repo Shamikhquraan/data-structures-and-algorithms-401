@@ -88,5 +88,22 @@ public class LinkedList<T> {
 
             System.out.println("The value " + value + " is not exist!");
         }
+
     }
+
+    public int kth(int k){
+        int len = 0;
+Node temp =head ;
+while (temp!=null){
+    temp=temp.next;
+    len++;
+}
+if(len<k) return -1;
+if (k<0)return 0;
+temp=head;
+for (int i=1+1 ; i<len-k+1;i++){temp=temp.next;}
+return (int) temp.value;
+    }
+
+
 }
