@@ -127,5 +127,27 @@ class LibraryTest {
         String note = list.kth(2);
         assertEquals(" the elemnt is ali.", note);
     }
+    @Test
+    public void testKthGreaterThanTheList() {
+        LinkedList list = new LinkedList();
+        list.insert("emam");
+        list.insert("ahmed");
+        list.insert("ali");
+
+        System.out.println(list.kth(4));
+        String note = list.kth(4);
+        assertEquals("number can't be higher than the length of the list", note);
+    }
+    @Test
+    public void testKthSmallerThanTheList() {
+        LinkedList list = new LinkedList();
+        list.insert("emam");
+        list.insert("ahmed");
+        list.insert("ali");
+
+        System.out.println(list.kth(-1));
+        String note = list.kth(-1);
+        assertEquals("K is negative number", note);
+    }
 }
 
