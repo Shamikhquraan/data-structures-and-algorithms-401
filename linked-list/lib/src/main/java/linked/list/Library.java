@@ -21,5 +21,10 @@ public class Library {
         System.out.println(newList.includes(3));
         System.out.println(newList.includes("Hello"));
         System.out.println(newList.includes("im the value after 0"));
+        System.out.println(newList.kth(2));
+        System.out.println(newList.kth(5));
+        System.out.println(newList.kth(20));
+
+
     }
 }
