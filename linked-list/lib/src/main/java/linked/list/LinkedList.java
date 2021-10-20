@@ -91,18 +91,29 @@ public class LinkedList<T> {
 
     }
 
-    public int kth(int k){
+
+    public String kthFromEnd(int k){
+        if (k == -1){
+            return "K is bigger than length";
+        }else
+        if (k == 0){
+            return "K is negative number";
+        }else{
+            return " the elemnt is "+ k+ ".";
+        }
+    }
+    public String kth(int k){
         int len = 0;
 Node temp =head ;
 while (temp!=null){
     temp=temp.next;
     len++;
 }
-if(len<k) return -1;
-if (k<0)return 0;
+if(len<k) return kthFromEnd(-1);
+if (k<0)return kthFromEnd(0);
 temp=head;
 for (int i=1+1 ; i<len-k+1;i++){temp=temp.next;}
-return (int) temp.value;
+return kthFromEnd((Integer) temp.value);
     }
 
 
