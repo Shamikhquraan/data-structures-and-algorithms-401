@@ -22,13 +22,6 @@ class LibraryTest {
     }
 
     @Test
-    public void testHeadValue() {
-        testList.insert(2);
-        Object output = testList.head.value;
-        assertEquals( 2, output,"Must be 2");
-    }
-
-    @Test
     public void testInsertMultipleToList() {
         testList.insert(7);
         testList.insert(6);
@@ -150,4 +143,5 @@ class LibraryTest {
         assertEquals("K is negative number", note);
     }
 }
+
 
