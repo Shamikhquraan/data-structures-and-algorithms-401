@@ -6,7 +6,7 @@ package linked.list;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class LibraryTest {
+class LibraryTest<string> {
     LinkedList testList = new LinkedList();
 
     @Test
@@ -141,6 +141,37 @@ class LibraryTest {
         System.out.println(list.kth(-1));
         String note = list.kth(-1);
         assertEquals("K is negative number", note);
+    }
+    @Test
+    public void testzipList() {
+        LinkedList newList3 = new LinkedList();
+
+        newList3.insert(5);
+        newList3.insert(6);
+        newList3.insert(9);
+        newList3.insert(2);
+        newList3.insert(2);
+        System.out.println("first Linked List:");
+        System.out.println(newList3.toString());
+        LinkedList newList2 = new LinkedList();
+        newList2.insert(4);
+        newList2.insert(3);
+        newList2.insert(2);
+        newList2.insert(1);
+        newList2.insert(0);
+        newList2.push(8);
+        newList2.push(7);
+        newList2.push(6);
+        newList2.push(5);
+        newList2.push(4);
+        System.out.println("second Linked List:");
+        System.out.println(newList2.toString());
+
+        System.out.println("merge Linked List:");
+       newList2.merge(newList3);
+       string output = (string) newList2.toString();
+        String expected =" { 4 } -->  { 2 } -->  { 5 } -->  { 2 } -->  { 6 } -->  { 9 } -->  { 7 } -->  { 6 } -->  { 8 } -->  { 5 } -->  { 0 } -->  { 1 } -->  { 2 } -->  { 3 } -->  { 4 } --> NULL";
+        assertEquals(expected, output);
     }
 }
 
