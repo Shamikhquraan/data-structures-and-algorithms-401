@@ -117,6 +117,15 @@ class LibraryTest {
 
     }
 
+    public void testKth() {
+        LinkedList list = new LinkedList();
+        list.insert("emam");
+        list.insert("ahmed");
+        list.insert("ali");
 
+        System.out.println(list.kth(2));
+        String note = list.kth(2);
+        assertEquals(" the elemnt is ali.", note);
+    }
 }
 
