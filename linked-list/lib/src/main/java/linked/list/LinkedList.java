@@ -94,7 +94,7 @@ public class LinkedList<T> {
 
     public String kthFromEnd(int k){
         if (k == -1){
-            return "K is bigger than length";
+            return "number can't be higher than the length of the list";
         }else
         if (k == 0){
             return "K is negative number";
