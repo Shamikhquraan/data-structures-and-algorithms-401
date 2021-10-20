@@ -28,11 +28,6 @@ public class Library {
 
         LinkedList newList2 = new LinkedList();
 
-        newList2.insert(4);
-        newList2.insert(3);
-        newList2.insert(2);
-        newList2.insert(1);
-        newList2.insert(0);
 
 
         LinkedList newList3= new LinkedList();
@@ -44,6 +39,11 @@ public class Library {
         newList3.insert(2);
         System.out.println("first Linked List:");
         System.out.println(newList3.toString());
+        newList2.insert(4);
+        newList2.insert(3);
+        newList2.insert(2);
+        newList2.insert(1);
+        newList2.insert(0);
 
         newList2.push(8);
         newList2.push(7);
