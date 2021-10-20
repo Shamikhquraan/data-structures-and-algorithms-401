@@ -26,6 +26,37 @@ public class Library {
         System.out.println(newList.kth(20));
       //  System.out.println(newList.kth(3));
 
+        LinkedList newList2 = new LinkedList();
+
+        newList2.insert(4);
+        newList2.insert(3);
+        newList2.insert(2);
+        newList2.insert(1);
+        newList2.insert(0);
+
+
+        LinkedList newList3= new LinkedList();
+
+        newList3.insert(5);
+        newList3.insert(6);
+        newList3.insert(9);
+        newList3.insert(2);
+        newList3.insert(2);
+        System.out.println("first Linked List:");
+        System.out.println(newList3.toString());
+
+        newList2.push(8);
+        newList2.push(7);
+        newList2.push(6);
+        newList2.push(5);
+        newList2.push(4);
+        System.out.println("second Linked List:");
+        System.out.println(newList2.toString());
+
+        System.out.println("merge Linked List:");
+        newList2.merge(newList3);
+        System.out.println(newList2.toString());
 
     }
+
 }
