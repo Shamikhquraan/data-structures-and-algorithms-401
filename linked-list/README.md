@@ -64,3 +64,19 @@ Visual and Code
 - Big O :
 time:o(1)
  space O(n)
+
+
+## zipLists
+
+
+### Challenge Summary
+
+- **Zip the two linked** lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+
+
+### Whiteboard Process:
+
+![](code401.png)
+
+### Approach & Efficiency:
+- **Use newList** and append the values inside it by using one while loop to loop on the nodes in two list. space -> O(n) Time -> O(n)
