@@ -76,7 +76,7 @@ time:o(1)
 
 ### Whiteboard Process:
 
-![](code401.png)
+![](ziblinked.png)
 
 ### Approach & Efficiency:
 - **Use newList** and append the values inside it by using one while loop to loop on the nodes in two list. space -> O(n) Time -> O(n)
