@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="492da96a-3f68-445f-ad65-5410a7ca29ce" name="Changes" comment="" />
+    <list default="true" id="492da96a-3f68-445f-ad65-5410a7ca29ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/PseudoQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/stack/and/queue/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/stack/and/queue/AppTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,9 +48,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -66,6 +73,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -113,12 +121,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.testCallingPopOrPeekOnEmptyStack" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.testCallingEmpPseudoQueue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;stack.and.queue.AppTest.testCallingPopOrPeekOnEmptyStack&quot;" />
+        <option name="scriptParameters" value="--tests &quot;stack.and.queue.AppTest.testCallingEmpPseudoQueue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -179,10 +187,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.AppTest" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Gradle.AppTest.testCallingEmpPseudoQueue" />
         <item itemvalue="Gradle.LibraryTest" />
         <item itemvalue="Gradle.AppTest.testPushOntoTheStack" />
-        <item itemvalue="Gradle.AppTest.testCallingPopOrPeekOnEmptyStack" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +215,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
