@@ -34,6 +34,23 @@ public class App {
         System.out.println(myQueue.toString());
         System.out.println( "if i want i can print the size :");
         System.out.println(myQueue.size);
+
+
+        System.out.println("Now i want to use enqueue by pseudoQueue:");
+        PseudoQueue<Integer> PseudoQueue1 = new PseudoQueue<>();
+        PseudoQueue1.enQueue(20);
+        PseudoQueue1.enQueue(3);
+        PseudoQueue1.enQueue(10);
+        System.out.println("This is PseudoQueue after enQueue three elemnts:");
+        System.out.println(PseudoQueue1);
+        System.out.println("peek:");
+        System.out.println(PseudoQueue1.peek());
+        System.out.println("The size of PseudoQueue after enQueue three elemnts:");
+        System.out.println(PseudoQueue1.getSize());
+        System.out.println("Now i want to use deQueue by pseudoQueue it should give me:");
+        System.out.println(PseudoQueue1.deQueue());
+        System.out.println(PseudoQueue1);
+
+    }
     }
 
-}

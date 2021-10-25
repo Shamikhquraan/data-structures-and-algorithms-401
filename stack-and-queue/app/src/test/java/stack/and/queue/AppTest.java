@@ -4,28 +4,30 @@
 package stack.and.queue;
 
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 
 public class AppTest {
     @Test void PushStack() {
         Stack stack1 = new Stack();
-        stack1.push("10");
+        stack1.push(10);
         assertFalse(stack1.isEmpty());
     }
     @Test void canPushMultipleToStack() {
         Stack stack1 = new Stack();
-        stack1.push("4");
-        stack1.push("9");
-        stack1.push("2");
-        stack1.push("10");
-        String topOfStack = (String) stack1.peek();
-        assertEquals("10", topOfStack);
+        stack1.push(4);
+        stack1.push(9);
+        stack1.push(2);
+        stack1.push(10);
+        int topOfStack = (int) stack1.peek();
+        assertEquals(10, topOfStack);
     }
 
     @Test void popAllElementStack() {
         Stack stack1 = new Stack();
-        stack1.push("10");
-        stack1.push("8");
+        stack1.push(10);
+        stack1.push(8);
         stack1.pop();
         stack1.pop();
         assertTrue(stack1.isEmpty());
@@ -33,12 +35,12 @@ public class AppTest {
 
     @Test void popPeekStack() {
         Stack stack1 = new Stack();
-        stack1.push("3");
-        stack1.push("14");
-        stack1.push("6");
+        stack1.push(3);
+        stack1.push(14);
+        stack1.push(6);
         stack1.pop();
-        String topOfStack = (String) stack1.peek();
-        assertEquals("14", topOfStack);
+        int topOfStack = (int) stack1.peek();
+        assertEquals(14, topOfStack);
     }
 
 
@@ -79,5 +81,59 @@ public class AppTest {
         Queue normQueue = new Queue();
         assertTrue(normQueue.isEmpty());
     }
+
+    @Test public void testEnqueueQueue() {
+        PseudoQueue<Integer> PseudoQueue1 = new PseudoQueue<>();
+
+        PseudoQueue1.enQueue(10);
+        PseudoQueue1.enQueue(9);
+        PseudoQueue1.enQueue(5);
+        PseudoQueue1.enQueue(6);
+        PseudoQueue1.enQueue(3);
+        PseudoQueue1.enQueue(1);
+        int size = PseudoQueue1.getSize();
+        int expectedSize = 6;
+        assertEquals(expectedSize,size);
+    }
+    @Test public void testDequeueQueue() {
+        PseudoQueue<Integer> PseudoQueue1 = new PseudoQueue<>();
+
+        PseudoQueue1.enQueue(6);
+        PseudoQueue1.enQueue(9);
+        PseudoQueue1.enQueue(5);
+        PseudoQueue1.enQueue(6);
+        PseudoQueue1.enQueue(10);
+        int value = PseudoQueue1.deQueue();
+        int expectedValue = 6;
+        int size = PseudoQueue1.getSize();
+        int expectedSize = 4;
+        assertEquals(size,expectedSize);
+        assertEquals(expectedValue,value);
+    }
+
+    @Test public void testPeekIntoAPseudoQueue() {
+        PseudoQueue<Integer> PseudoQueue1 = new PseudoQueue<>();
+
+        PseudoQueue1.enQueue(3);
+        PseudoQueue1.enQueue(9);
+        PseudoQueue1.enQueue(5);
+        PseudoQueue1.enQueue(6);
+        PseudoQueue1.enQueue(10);
+        int value = PseudoQueue1.peek();
+        int expectedValue = 3;
+
+        assertEquals(expectedValue,value);
+
+    }
+    @Test public void testInstantiateAnEmptyPseudoQueue() {
+        PseudoQueue<Integer> PseudoQueue1 = new PseudoQueue<>();
+        int size = PseudoQueue1.getSize();
+        int expectedSize = 0;
+        assertEquals(expectedSize,size);
+        String output = PseudoQueue1.toString();
+        String expectedOutput = "null";
+        assertEquals(expectedOutput,output);
+    }
+
 
 }

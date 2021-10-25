@@ -4,7 +4,7 @@ public class Stack <T> {
     Node top = null;
     int size =0;
 
-    public void push(T value){
+    public void push(int value){
       Node newNode = new Node(value);
         newNode.next = top;
         top = newNode;
@@ -35,6 +35,7 @@ public class Stack <T> {
         boolean test =(size == 0);
         return test;
     }
+
 
     @Override
     public String toString() {
