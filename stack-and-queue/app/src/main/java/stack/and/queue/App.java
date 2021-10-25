@@ -51,6 +51,20 @@ public class App {
         System.out.println(PseudoQueue1.deQueue());
         System.out.println(PseudoQueue1);
 
+//now we will add summa :
+        AnimalShelter shop = new AnimalShelter();
+        shop.enq("dog");
+        shop.enq("dog");
+        shop.enq("dog");
+        shop.enq("dog");
+        shop.enq("cat");
+        shop.enq("fish");
+        shop.enq("Shamikh");
+
+        System.out.println(shop.deqCat());
+        System.out.println(shop.deqAny());
+
+
     }
     }
 

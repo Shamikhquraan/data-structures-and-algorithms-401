@@ -51,3 +51,19 @@ A Queue is a container of objects (a linear collection) that are inserted and re
 ### Big(O): 
 - **enqueue :** O(n) time space O(1)
 - **deQueue :** O(1) time and space
+
+
+
+
+## Code Challenge: Class 12
+## challenge
+
+- **Create a class called AnimalShelter** which holds only dogs and cats. The shelter operates using a first-in, first-out approach. Implement the following methods: enqueue Arguments: animal animal can be either a dog or a cat object. dequeue Arguments: pref pref can be either "dog" or "cat" Return: either a dog or a cat, based on preference. If pref is not "dog" or "cat" then return null.
+
+
+### whiteBoard process:
+![](animalShelter.png)
+
+### Big O :
+- Enqueue(String x) Time Complexity: O(1) or O(n) if preferred animal is at the end or gone.
+-  Dequeue() Time Complexity: O(1) or O(n) if preferred animal is at the end or gone.

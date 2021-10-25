@@ -134,6 +134,24 @@ public class AppTest {
         String expectedOutput = "null";
         assertEquals(expectedOutput,output);
     }
+    @Test void happyPathForAnimalShelter() {
 
-
+        AnimalShelter shop = new AnimalShelter();
+        shop.enq("dog");
+        shop.enq("dog");
+        shop.enq("dog");
+        shop.enq("cat");
+        shop.enq("fish");
+        shop.enq("Andare");
+        String msg = shop.deqCat();
+//        System.out.println(shop.deqCat());
+        assertEquals("The oldest poor cat===>  cat", msg);
+    }
+    @Test void edgeCaseForAnimalShelter() {
+        AnimalShelter shop = new AnimalShelter();
+        shop.enq("fish");
+        String msg = shop.deqCat();
+        System.out.println(shop.deqCat());
+        assertEquals("The oldest poor cat===>  null", msg);
+    }
 }

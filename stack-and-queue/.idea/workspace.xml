@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="492da96a-3f68-445f-ad65-5410a7ca29ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/AnimalShelter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/stack/and/queue/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/stack/and/queue/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/stack/and/queue/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/stack/and/queue/Stack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/test/stack/and/queue/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/test/stack/and/queue/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/stack/and/queue/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/stack/and/queue/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +84,7 @@
       <recent name="stack.and.queue" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AppTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stack.and.queue.App" />
       <module name="stack-and-queue.app.main" />
@@ -119,12 +119,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.testCallingEmpPseudoQueue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.happyPathForAnimalShelter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;stack.and.queue.AppTest.testCallingEmpPseudoQueue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;stack.and.queue.AppTest.happyPathForAnimalShelter&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -140,12 +140,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AppTest.testPushOntoTheStack" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AppTest.testCallingEmpPseudoQueue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;stack.and.queue.AppTest.testPushOntoTheStack&quot;" />
+        <option name="scriptParameters" value="--tests &quot;stack.and.queue.AppTest.testCallingEmpPseudoQueue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -185,10 +185,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.AppTest" />
+        <item itemvalue="Gradle.AppTest.happyPathForAnimalShelter" />
         <item itemvalue="Application.App" />
         <item itemvalue="Gradle.AppTest.testCallingEmpPseudoQueue" />
         <item itemvalue="Gradle.LibraryTest" />
-        <item itemvalue="Gradle.AppTest.testPushOntoTheStack" />
       </list>
     </recent_temporary>
   </component>
