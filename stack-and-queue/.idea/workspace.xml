@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="492da96a-3f68-445f-ad65-5410a7ca29ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/PseudoQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/stack/and/queue/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/stack/and/queue/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/stack/and/queue/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/stack/and/queue/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/stack/and/queue/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/stack/and/queue/Stack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/test/stack/and/queue/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/test/stack/and/queue/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
