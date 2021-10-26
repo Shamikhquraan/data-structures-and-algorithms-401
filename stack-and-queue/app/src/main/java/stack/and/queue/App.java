@@ -3,6 +3,8 @@
  */
 package stack.and.queue;
 
+import static stack.and.queue.bracketBalanced.areBracketsBalanced;
+
 public class App {
     public static void main(String[] args) {
         Stack<Integer> myStack = new Stack<Integer>();
@@ -63,8 +65,23 @@ public class App {
 
         System.out.println(shop.deqCat());
         System.out.println(shop.deqAny());
-
-
+//-----------------------------------------------------------
+        String string1 = "([{shamikh}])";
+        if (areBracketsBalanced(string1))
+            System.out.println("Balanced ");
+        else
+            System.out.println("Not Balanced ");
+//-------------------------------------------------------------
+        String string2 = "([{shamikh})";
+        if (areBracketsBalanced(string2))
+            System.out.println("Balanced ");
+        else
+            System.out.println("Not Balanced ");
+//---------------------------------------------------------------
+        String string3 = "([{shamikh)";
+        if (areBracketsBalanced(string3))
+            System.out.println("Balanced ");
+        else
+            System.out.println("Not Balanced ");
     }
     }
-
