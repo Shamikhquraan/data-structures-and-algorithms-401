@@ -67,3 +67,22 @@ A Queue is a container of objects (a linear collection) that are inserted and re
 ### Big O :
 - Enqueue(String x) Time Complexity: O(1) or O(n) if preferred animal is at the end or gone.
 -  Dequeue() Time Complexity: O(1) or O(n) if preferred animal is at the end or gone.
+
+
+
+
+## Code Challenge: Class 13
+## challenge
+
+- Write a function called validate brackets.
+- The function representing whether or not the brackets in the string are balanced.
+- the function Return: boolean. if not validate it will be false , if validate it will be true .
+
+### whiteBoard process:
+
+![](labtoday.png)
+
+
+### Big O :
+Time : O(n) 
+Space: O(n) for stack
