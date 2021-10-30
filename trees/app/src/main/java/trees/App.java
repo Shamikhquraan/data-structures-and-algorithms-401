@@ -5,6 +5,7 @@ package trees;
 
 public class App {
     public static void main(String[] args) {
+        //output inorder post contain
         BinarySearchTree treeForT=new BinarySearchTree();
         treeForT.insert(20);
         System.out.println(treeForT.postOrder(treeForT.root)+" postOrder");
