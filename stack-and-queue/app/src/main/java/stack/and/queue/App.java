@@ -83,5 +83,11 @@ public class App {
             System.out.println("Balanced ");
         else
             System.out.println("Not Balanced ");
+        //***************************************************************
+        DuckDuckGoose b =   new DuckDuckGoose();
+        String statment="ABCDE";
+        String statment1="ABCDE";
+        System.out.println(" Awnser is:   "+ b.DuckDuckGoose(statment1 , 3));
+        System.out.println(" Awnser is:   "+ b.DuckDuckGoose(statment , 2));
     }
     }

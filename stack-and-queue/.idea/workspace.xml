@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="492da96a-3f68-445f-ad65-5410a7ca29ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/bracketBalanced.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/DuckDuckGoose.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trees/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trees/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trees/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trees/app/src/main/java/trees/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trees/app/src/test/java/trees/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trees/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trees/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trees/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trees/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trees/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/stack/and/queue/App.java" afterDir="false" />
     </list>
@@ -70,7 +80,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../trees" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
