@@ -20,3 +20,19 @@ insertValue -> Time Complexity is O(n), This was done via recursion. containsVal
 
 ## API:
 **Add Arguments:** value Return: nothing Adds a new node with that value in the correct location in the binary search tree. Contains Argument: value Returns: boolean indicating whether or not the value is in the tree at least once.
+
+
+## Code Challenge: Class 16
+## Challenge
+### Write the following method for the Binary Tree class:
+
+- **find maximum value Arguments:** none Returns: number Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+## Whiteboard Process : 
+
+![](max-tree)
+
+## Approach & Efficiency
+- **Time O(n) because** we iterate inside while loop space O(1) because we didn’t assign more than one in the same time.
+
+

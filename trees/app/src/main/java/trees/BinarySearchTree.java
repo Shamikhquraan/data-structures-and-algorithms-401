@@ -30,6 +30,22 @@ public class BinarySearchTree <T> extends BinaryTree{
             }
         }
     }
+    public T getMax(){
+        return findMax(root ,0);
+    }
+    public T findMax(Node root , int n){
+        Node sim =root;
+        while (sim!=null){
+            if (sim.right!=null){
+                sim=sim.right;
+            }else {
+                return (T) sim.value;
+            }
+        }
+        String str="EMPTY TREE";
+        return (T) str;
+    }
+
 
     public boolean contains(Integer key) {
         Node temp = root;
@@ -55,4 +71,6 @@ public class BinarySearchTree <T> extends BinaryTree{
         }
         return false;
     }
+
+
 }
