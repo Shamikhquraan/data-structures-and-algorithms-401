@@ -1,32 +1,71 @@
 package trees;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
-public class BinaryTree<T> {
+public class BinaryTree <T> {
     Node root;
-    ArrayList<T> arrayList =new ArrayList();
-    public ArrayList<T> preOrder( Node root){
-        if (root!=null) {
-            arrayList.add((T) root.value);
-            preOrder(root.left);
-            preOrder(root.right);
-        }
-        return arrayList;
+    BinaryTree()
+    {
+        root = null;
     }
-    public ArrayList<T> inOrder( Node root){
-        if (root!=null) {
-            inOrder(root.left);
-            arrayList.add((T) root.value);
-            inOrder(root.right);
+    public List<Integer> preOrder(Node node) {
+        List<Integer> list = new ArrayList<>();
+        if (node != null) {
+            list.add(node.value);
+            if (node.left != null)
+                list.addAll(preOrder(node.left));
+            if (node.right != null)
+                list.addAll(preOrder(node.right));
         }
-        return arrayList;
+        return list;
     }
-    public ArrayList<T> postOrder( Node root){
-        if (root!=null) {
-            postOrder(root.left);
-            postOrder(root.right);
-            arrayList.add((T) root.value);
+
+
+    public List<Integer> inOrder(Node node) {
+        List<Integer> list = new ArrayList<>();
+        if (node != null) {
+            if (node.left != null)
+                list.addAll(preOrder(node.left));
+            list.add(node.value);
+            if (node.right != null)
+                list.addAll(preOrder(node.right));
         }
-        return arrayList;
+        return list;
     }
+
+
+    public List<Integer> postOrder(Node node) {
+        List<Integer> list = new ArrayList<>();
+        if (node != null) {
+            if (node.left != null)
+                list.addAll(preOrder(node.left));
+            if (node.right != null)
+                list.addAll(preOrder(node.right));
+            list.add(node.value);
+        }
+        return list;
+    }
+
+    private int findMax(Node node)
+    {
+        if (node == null) {
+            return 0;
+        }
+        int res = node.value;
+        int lres = findMax(node.left);
+        int rres = findMax(node.right);
+        if (lres > res)
+            res = lres;
+        if (rres > res)
+            res = rres;
+        return res;
+    }
+
+    public int getMax(){
+        return   findMax(root);
+    }
+
 }
