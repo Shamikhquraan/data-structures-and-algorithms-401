@@ -59,5 +59,14 @@ class AppTest {
         expectedVlue.add(40);
         assertEquals(expectedVlue,singleNode.inOrder(singleNode.root));
     }
-
+    @Test
+    void testGetMax(){
+        BinarySearchTree tree=new BinarySearchTree();
+        tree.insert(23);
+        tree.insert(12);
+        tree.insert(32);
+        tree.insert(27);
+        Integer expectedVlue = 32;
+        assertEquals(expectedVlue,tree.getMax());
+    }
 }

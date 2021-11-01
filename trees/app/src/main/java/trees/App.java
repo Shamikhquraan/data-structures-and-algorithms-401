@@ -15,5 +15,8 @@ public class App {
         System.out.println(treeForT.contains(20));
         treeForT.insert(80);
         System.out.println(treeForT.inOrder(treeForT.root)+" inOrder");
+        //to get the max value from Tree , it will give u 80 .
+        System.out.println(treeForT.getMax());
+
     }
 }
