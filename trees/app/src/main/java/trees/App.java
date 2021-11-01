@@ -8,15 +8,19 @@ public class App {
         //output inorder post contain
         BinarySearchTree treeForT=new BinarySearchTree();
         treeForT.insert(20);
-        System.out.println(treeForT.postOrder(treeForT.root)+" postOrder");
-        System.out.println(treeForT.contains(20));
         treeForT.insert(60);
-        System.out.println(treeForT.inOrder(treeForT.root)+" inOrder");
-        System.out.println(treeForT.contains(20));
         treeForT.insert(80);
+        treeForT.insert(30);
+        treeForT.insert(90);
+        treeForT.insert(45);
+//        System.out.println(treeForT.contains(20));
+        System.out.println(treeForT.preOrder(treeForT.root)+" preOrder");
         System.out.println(treeForT.inOrder(treeForT.root)+" inOrder");
-        //to get the max value from Tree , it will give u 80 .
-        System.out.println(treeForT.getMax());
+        System.out.println(treeForT.postOrder(treeForT.root)+" postOrder");
+
+        //to get the max value from Tree , it will give u 90 .
+        System.out.println("Max is :"+treeForT.getMax());
+
 
     }
 }
