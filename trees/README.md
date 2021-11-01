@@ -30,7 +30,7 @@ insertValue -> Time Complexity is O(n), This was done via recursion. containsVal
 
 ## Whiteboard Process : 
 
-![](max-tree)
+![](max-tree.png)
 
 ## Approach & Efficiency
 - **Time O(n) because** we iterate inside while loop space O(1) because we didn’t assign more than one in the same time.
