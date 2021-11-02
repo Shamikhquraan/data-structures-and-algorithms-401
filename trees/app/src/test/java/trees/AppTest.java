@@ -6,8 +6,10 @@ package trees;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Queue;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static trees.BinaryTree.breadthFirst;
 
 class AppTest {
     @Test
@@ -69,4 +71,18 @@ class AppTest {
         Integer expectedVlue = 32;
         assertEquals(expectedVlue,tree.getMax());
     }
+
+
+    @Test void testBreadthFirst() {
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(5);
+        tree.insert(2);
+        tree.insert(8);
+        tree.insert(9);
+
+        Queue<Integer> expected= breadthFirst(tree);
+        System.out.println(breadthFirst(tree));
+        assertEquals("[5, 2, 8, 9]", expected.toString());
+    }
+
 }

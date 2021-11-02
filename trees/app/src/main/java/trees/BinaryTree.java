@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class BinaryTree <T> {
+
     Node root;
     BinaryTree()
     {
@@ -64,6 +65,46 @@ public class BinaryTree <T> {
         return res;
     }
 
+
+
+    public static  Queue<Integer> breadthFirst(BinaryTree tree) {
+        Queue<Node> queue = new LinkedList<>() ;
+        Queue<Integer> list = new LinkedList<>() ;
+        if (tree.root == null)
+            return null;
+        queue.clear();
+        queue.add(tree.root);
+        list.add(tree.root.value);
+        while(!queue.isEmpty()){
+            Node node = queue.remove();
+
+            if(node.left != null){
+                queue.add(node.left);
+                list.add(node.left.value);
+            }
+            if(node.right != null) {
+                queue.add(node.right);
+                list.add(node.right.value);
+            }
+        }
+        return list;
+    }
+    public boolean isEmpty() {
+        if (root != null){
+            return  false;
+        } else {
+            System.out.println("Tree is empty!");
+            return true;
+        }
+    }
+    public void getRoot() {
+        if (root != null){
+            System.out.println(root.value);
+        } else {
+            System.out.println("Tree is empty!");
+        }
+
+    }
     public int getMax(){
         return   findMax(root);
     }
