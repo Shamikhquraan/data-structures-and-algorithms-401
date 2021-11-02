@@ -15,7 +15,7 @@ public class BinaryTree <T> {
     public List<Integer> preOrder(Node node) {
         List<Integer> list = new ArrayList<>();
         if (node != null) {
-            list.add(node.value);
+            list.add((Integer) node.value);
             if (node.left != null)
                 list.addAll(preOrder(node.left));
             if (node.right != null)
@@ -30,7 +30,7 @@ public class BinaryTree <T> {
         if (node != null) {
             if (node.left != null)
                 list.addAll(preOrder(node.left));
-            list.add(node.value);
+            list.add((Integer) node.value);
             if (node.right != null)
                 list.addAll(preOrder(node.right));
         }
@@ -45,7 +45,7 @@ public class BinaryTree <T> {
                 list.addAll(preOrder(node.left));
             if (node.right != null)
                 list.addAll(preOrder(node.right));
-            list.add(node.value);
+            list.add((Integer) node.value);
         }
         return list;
     }
@@ -55,7 +55,7 @@ public class BinaryTree <T> {
         if (node == null) {
             return 0;
         }
-        int res = node.value;
+        int res = (int) node.value;
         int lres = findMax(node.left);
         int rres = findMax(node.right);
         if (lres > res)
@@ -74,17 +74,17 @@ public class BinaryTree <T> {
             return null;
         queue.clear();
         queue.add(tree.root);
-        list.add(tree.root.value);
+        list.add((Integer) tree.root.value);
         while(!queue.isEmpty()){
             Node node = queue.remove();
 
             if(node.left != null){
                 queue.add(node.left);
-                list.add(node.left.value);
+                list.add((Integer) node.left.value);
             }
             if(node.right != null) {
                 queue.add(node.right);
-                list.add(node.right.value);
+                list.add((Integer) node.right.value);
             }
         }
         return list;

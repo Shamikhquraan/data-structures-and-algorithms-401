@@ -3,6 +3,10 @@
  */
 package trees;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 import static trees.BinaryTree.breadthFirst;
 
 public class App {
@@ -29,5 +33,25 @@ public class App {
 
         //this is the array وReturn: list of all values in the tree, in the order they were encountered
         System.out.println(breadthFirst(treeForT));
+        //17
+        System.out.println(FizzBuzzTree.fizzBuzzTree(treeForT));
+
+
+
+    }
+    public static ArrayList   breadthFirst(BinarySearchTree tree) {
+        Queue<Node> breadth = new LinkedList<>();
+        ArrayList treeList=new ArrayList();
+        breadth.add(tree.root);
+        while (breadth.peek() != null) {
+            Node front = breadth.remove();
+            treeList.add(front.value);
+            if (front.left != null)
+                breadth.add(front.left);
+            if (front.right != null)
+                breadth.add(front.right);
+        }
+
+        return treeList;
     }
 }
