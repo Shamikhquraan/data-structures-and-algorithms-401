@@ -3,6 +3,8 @@
  */
 package trees;
 
+import static trees.BinaryTree.breadthFirst;
+
 public class App {
     public static void main(String[] args) {
         //output inorder post contain
@@ -22,5 +24,10 @@ public class App {
         System.out.println("Max is :"+treeForT.getMax());
 
 
+        System.out.println("using breadthFirst function ," +
+                " list of all values in the tree, in the order they were encountered :");
+
+        //this is the array وReturn: list of all values in the tree, in the order they were encountered
+        System.out.println(breadthFirst(treeForT));
     }
 }

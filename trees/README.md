@@ -36,3 +36,15 @@ insertValue -> Time Complexity is O(n), This was done via recursion. containsVal
 - **Time O(n) because** we iterate inside while loop space O(1) because we didn’t assign more than one in the same time.
 
 
+
+
+## Breadth-First Traversal :class17:
+### Challenge
+- **Write a function** called breadth first Arguments: tree Return: list of all values in the tree, in the order they were encountered NOTE: Traverse the input tree using a Breadth-first approach.
+
+### Whiteboard Process :
+
+![](15555.png)
+
+### Approach & Efficiency
+Time Complexity: O(n) where n is the number of nodes in the binary tree Space Complexity: O(n) where n is the number of nodes in the binary tree.
