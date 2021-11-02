@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19bba447-572a-402d-a494-c85c544039cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/trees/FizzBuzzTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/trees/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/trees/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/trees/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/trees/BinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/trees/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/trees/BinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/trees/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/trees/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/trees/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/trees/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/trees/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/trees/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/trees/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/trees/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/trees/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/trees/Node.java" afterDir="false" />
-    </list>
+    <list default="true" id="19bba447-572a-402d-a494-c85c544039cb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
