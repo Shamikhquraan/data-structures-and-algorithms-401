@@ -7,9 +7,9 @@ public class BinarySearchTree extends  BinaryTree {
         if (current == null) {
             return new Node(value);
         }
-        if (value < current.value) {
+        if ( value < (int)current.value ) {
             current.left = addToTree(current.left, value);
-        } else if (value > current.value) {
+        } else if (value > (int) current.value) {
             current.right = addToTree(current.right, value);
         } else {
             return current;
@@ -24,10 +24,10 @@ public class BinarySearchTree extends  BinaryTree {
         if (current == null) {
             return false;
         }
-        if (value == current.value) {
+        if (value ==(int) current.value) {
             return true;
         }
-        return value < current.value
+        return value <(int) current.value
                 ? containsNode(current.left, value)
                 : containsNode(current.right, value);
     }
