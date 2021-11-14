@@ -4,11 +4,15 @@
 package InsertionSort;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
-class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+public class AppTest {
+    @Test
+    public void testInsertSortArr() {
+        int[] Arr = {20,33,12,8,46,-8};
+        int[] outputArray = InsertionSort.insertSort(Arr);
+        int[] expectedOutput={-8,8,12,20,33,46};
+        assertArrayEquals(expectedOutput,outputArray);
     }
 }
