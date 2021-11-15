@@ -5,9 +5,8 @@
 
 ## Pseudo Code
 
-## Algorithim : 
+ALGORITHM Mergesort(arr) DECLARE n <-- arr.length
 
-Mergesort(arr) DECLARE n <-- arr.length
 if n > 1
   DECLARE mid <-- n/2
   DECLARE left <-- arr[0...mid]
@@ -18,6 +17,7 @@ if n > 1
   Mergesort(right)
   // merge the sorted left and right sides together
   Merge(left, right, arr)
+
 ALGORITHM Merge(left, right, arr) DECLARE i <-- 0 DECLARE j <-- 0 DECLARE k <-- 0
 
 while i < left.length && j < right.length
@@ -27,17 +27,11 @@ while i < left.length && j < right.length
     else
         arr[k] <-- right[j]
         j <-- j + 1
-
     k <-- k + 1
-
 if i = left.length
-  
-  - set remaining entries in arr to remaining values in right
+  set remaining entries in arr to remaining values in right
 else
-   -set remaining entries in arr to remaining values in left
-Sample Arrays In your blog article, visually show the output of processing this input array:
-
-[ 8,4,23,42,16,15]
+   set remaining entries in arr to remaining values in left
 
 ## Solution:
 
