@@ -18,6 +18,7 @@ if n > 1
   // merge the sorted left and right sides together
   Merge(left, right, arr)
 
+
 ALGORITHM Merge(left, right, arr) DECLARE i <-- 0 DECLARE j <-- 0 DECLARE k <-- 0
 
 while i < left.length && j < right.length
@@ -27,9 +28,11 @@ while i < left.length && j < right.length
     else
         arr[k] <-- right[j]
         j <-- j + 1
+
     k <-- k + 1
+
 if i = left.length
-  set remaining entries in arr to remaining values in right
+   set remaining entries in arr to remaining values in right
 else
    set remaining entries in arr to remaining values in left
 
@@ -41,8 +44,6 @@ else
 ## Code:
 
 public class MergeSort {
-public void mergeSort(int[] arr){
-
 int n = arr.length;
 if(n>1){
   int mid = n/2 ;
@@ -52,6 +53,7 @@ if(n>1){
   mergeSort(right);
   merge(left ,right,arr);
 }
+
 }
 
 public void merge(int[] left , int[] right , int[] arr){
