@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19bba447-572a-402d-a494-c85c544039cb" name="Changes" comment="" />
+    <list default="true" id="19bba447-572a-402d-a494-c85c544039cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../mergeSort/BLOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mergeSort/app/src/test/java/mergeSort/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mergeSort/app/src/test/java/mergeSort/AppTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
