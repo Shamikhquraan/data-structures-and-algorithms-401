@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19bba447-572a-402d-a494-c85c544039cb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../linked-list/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linked-list/lib/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linked-list/lib/bin/main/linked/list/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/bin/main/linked/list/Library.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linked-list/lib/bin/main/linked/list/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/bin/main/linked/list/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linked-list/lib/bin/main/linked/list/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/bin/main/linked/list/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linked-list/lib/bin/test/linked/list/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/lib/bin/test/linked/list/LibraryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mergeSort/BLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/../mergeSort/BLOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stack-and-queue/app/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/app/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stack-and-queue/app/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/app/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stack-and-queue/app/bin/main/stack/and/queue/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../stack-and-queue/app/bin/main/stack/and/queue/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/app/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.project" beforeDir="false" afterPath="$PROJECT_DIR$/app/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
