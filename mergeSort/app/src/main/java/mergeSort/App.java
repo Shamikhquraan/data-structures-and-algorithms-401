@@ -9,14 +9,25 @@ public class App {
     public static void main(String[] args) {
         MergeSort mergeSort = new MergeSort();
         int []arr = {8,4,23,42,16,15};
-        int [] Arr= {16 , 5 ,35 , 44 , 2 , 80};
+        int [] Arr= {16 , 5 ,35 , -44 , 2 , 80};
+        int [] Arr2= {1 , 2 ,3 , 4 , 5 , 6};
+        int [] Arr3= {};
+
+
         System.out.println(Arrays.toString(arr)+" First Array before sorting.");
         System.out.println(Arrays.toString(Arr)+" Second Array before sorting..");
+        System.out.println(Arrays.toString(Arr2)+" First Array before sorting.");
+        System.out.println(Arrays.toString(Arr3)+" Second Array before sorting..");
+
         mergeSort.mergeSort(arr);
         mergeSort.mergeSort(Arr);
+        mergeSort.mergeSort(Arr2);
+        mergeSort.mergeSort(Arr3);
 
         System.out.println(Arrays.toString(arr)+" First sortArray by mearge.");
         System.out.println(Arrays.toString(Arr)+" Second sortArray by mearge.");
+        System.out.println(Arrays.toString(Arr2)+" First sortArray by mearge.");
+        System.out.println(Arrays.toString(Arr3)+" Second sortArray by mearge.");
 
 
 }
