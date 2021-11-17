@@ -78,8 +78,10 @@ public class MergeSort {
         }
         while (j<right.length){
             arr[k]=right[j];
-            j++; k++; }
-    } }
+            j++; k++; 
+            }
+    } 
+    }
 
 ## Test:
 
@@ -92,6 +94,7 @@ class AppTest {
         String res = Arrays.toString(arr);
         assertEquals("[4, 8, 15, 16, 23, 42]" , res);
     }
+}
 
 ## Big(O):
 
