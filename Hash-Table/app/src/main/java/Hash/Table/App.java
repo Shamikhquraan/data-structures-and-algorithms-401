@@ -15,6 +15,9 @@ public class App {
         System.out.println(key);
         hashTable.add("10", 36);
         System.out.println( hashTable.contains("10"));
+
+        String string = "A strawberry is a strawberry";
+        System.out.println(hashTable.checkRepeated(string));
     }
 
 }
