@@ -115,5 +115,16 @@ int bucketIndex = getBucketIndex(key); int hashCode = hashCode(key);
     public boolean contains(K key) throws Exception { try { get(key);
         return true; } catch (Exception e) { return false; }
     }
+    public String checkRepeated(String string) throws Exception {
+
+        String arrString[]=string.split(" ");
+        HashTable<String,Integer> hashTable= new HashTable<>();
+        for (String s: arrString){
+            String lowerString= s.toLowerCase();
+            if (hashTable.contains(lowerString))return lowerString;
+            hashTable.add(lowerString,1);
+        }
+        return null;
+    }
 
 }
