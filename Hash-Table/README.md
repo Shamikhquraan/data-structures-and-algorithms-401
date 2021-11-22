@@ -69,3 +69,44 @@ there is no word repeated. the string is only one word.
                 HashTable<String,Integer> hashTable= new HashTable<>();
                 assertEquals("a" ,hashTable.checkRepeated(string));
         }
+
+
+
+
+# Tree Intersection
+
+## Challenge:
+- Find all values found to be in 2 binary trees.
+Write a function called tree intersection Arguments: two binary trees Return: array.
+
+## Solution: 
+
+![](sol1.png)
+
+## Code :
+
+
+public class TreeIntersection {
+    public static List treeIntersection(Tree tree1, Tree tree2) {
+        List treeOne = tree1.inOrder(tree1.root);
+        List treeTwo = tree1.inOrder(tree2.root);
+        List results = new ArrayList<>();
+        HashTable hashtable = new HashTable();
+        for (int i = 0; i < treeOne.size(); i++) {
+            hashtable.add(treeOne.get(i),i);
+            if (hashtable.contain(treeTwo.get(i))){
+                results.add(treeTwo.get(i));
+            }
+        }
+        return  results;
+    }
+}
+
+## Approach & Efficiency Big(O)
+
+- My approach was to use a Result as the returning value after a depth first search on both Binary Trees. The time complexity is O(n + h).
+
+## Egde cases
+- two epmty trees
+- one empty tree
+- no intersection.
