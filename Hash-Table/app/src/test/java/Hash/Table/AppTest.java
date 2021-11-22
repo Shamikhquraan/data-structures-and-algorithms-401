@@ -2,6 +2,7 @@ package Hash.Table;
 
 import org.junit.jupiter.api.Test;
 
+import static Hash.Table.RepeatedWord.repeatedWord;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -11,14 +12,14 @@ class AppTest{
 
                 HashTable<String,Integer> hashTable= new HashTable<>();
                 hashTable.add("13", 50);
-                System.out.println( hashTable.contains("13"));
-                assertTrue(hashTable.contains("13"));
+                System.out.println( hashTable.contain("13"));
+                assertTrue(hashTable.contain("13"));
         }
         @Test void checkRepeatedTest() throws Exception {
 
                 HashTable<String,Integer> hashTable= new HashTable<>();
 
-                assertEquals("it", hashTable.checkRepeated("It was the best of times, it was the worst of times, " +
+                assertEquals("it", repeatedWord("It was the best of times, it was the worst of times, " +
                         "it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch " +
                         "of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, " +
                         "it was the winter of despair, we had everything before us, we had nothing before us, we were all going " +
@@ -29,7 +30,7 @@ class AppTest{
 
                 String string = "A strawberry is a strawberry";
                 HashTable<String,Integer> hashTable= new HashTable<>();
-                assertEquals("a" ,hashTable.checkRepeated(string));
+                assertEquals("a" ,repeatedWord(string));
         }
 
         }

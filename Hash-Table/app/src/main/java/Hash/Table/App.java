@@ -3,6 +3,8 @@
  */
 package Hash.Table;
 
+import static Hash.Table.RepeatedWord.repeatedWord;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -14,10 +16,24 @@ public class App {
         Integer key = hashTable.get("Shamikh");
         System.out.println(key);
         hashTable.add("10", 36);
-        System.out.println( hashTable.contains("10"));
-
+        System.out.println( hashTable.contain("10"));
         String string = "A strawberry is a strawberry";
-        System.out.println(hashTable.checkRepeated(string));
+        System.out.println(repeatedWord(string));
+
+        Tree tree = new Tree();
+        tree.add(23);
+        tree.add(13);
+        tree.add(20);
+        tree.add(8);
+        tree.add(65);
+        Tree tree2 = new Tree();
+        tree2.add(65);
+        tree2.add(20);
+        tree2.add(13);
+        tree2.add(3);
+        tree2.add(8);
+        System.out.println(TreeIntersection.treeIntersection(tree, tree2));
+
     }
 
 }
