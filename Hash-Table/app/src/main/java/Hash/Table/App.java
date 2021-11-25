@@ -17,7 +17,7 @@ public class App {
         System.out.println(key);
         hashTable.add("10", 36);
         System.out.println( hashTable.contain("10"));
-        String string = "A strawberry is a strawberry";
+        String string = "far strawberry am far  is am  strawberry";
         System.out.println(repeatedWord(string));
 
         Tree tree = new Tree();
@@ -33,6 +33,19 @@ public class App {
         tree2.add(3);
         tree2.add(8);
         System.out.println(TreeIntersection.treeIntersection(tree, tree2));
+
+//------------------------------------------------
+        HashTable table = new HashTable();
+        table.add("shamikh", "25");
+        table.add("Rammah", "20");
+        table.add("Salma", "16");
+        HashTable table2 = new HashTable();
+        table2.add("shamikh", "22");
+        table2.add("Rammah", "45");
+        table2.add("Salma", "66");
+
+        System.out.println( table.get("shamikh"));
+        System.out.println( table.get("Rammah"));
 
     }
 

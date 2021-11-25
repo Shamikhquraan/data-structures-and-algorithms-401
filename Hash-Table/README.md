@@ -110,3 +110,60 @@ public class TreeIntersection {
 - two epmty trees
 - one empty tree
 - no intersection.
+
+
+
+
+## Left Join
+### Challenge:
+- Write a function that LEFT JOINs two hashmaps into a single data structure.
+
+- Write a function called left join Arguments: two hash maps The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values. The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values. Return: The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic NOTES:
+
+- Combine the key and corresponding values (if they exist) into a new data structure according to LEFT JOIN logic. LEFT JOIN means all the values in the first hashmap are returned, and if values exist in the “right” hashmap, they are appended to the result row. If no values exist in the right hashmap, then some flavor of NULL should be appended to the result row.
+
+### Solution:
+
+![](Hash.png)
+
+
+## Code :
+
+
+public class HashLeftJoin {
+    public static List<String> HashleftJoin(HashMap h1, HashMap h2){
+        List<String> Hashlist = new ArrayList<>();
+        for(Object k : h1.keySet()){
+            if(h1.containsKey(k)){
+                Hashlist.add(k +  ": " + h1.get(k)+ ", " + h2.get(k));
+            } else{
+                Hashlist.add(k + ": " + h1.get(k) + ", " + null);
+            }
+        }
+        return Hashlist;
+    }
+
+
+## Test :
+
+
+ public void test_leftWithSomeJoins(){
+                HashMap h1 = new HashMap();
+                h1.put("Shamikh", "rami"); //
+                h1.put("im", "angery"); //
+                HashMap h2 = new HashMap();
+                h2.put("Shamikh", "quraan");
+                h2.put("ana", "what");
+                h2.put("He", "sham");
+                List<String> list = new ArrayList<>();
+                list.add("guide: usher, null");
+                list.add("shamikh: rami, quraan");
+                assertEquals( list ,  HashLeftJoin.HashleftJoin(h1, h2));
+        }
+
+
+
+## BIG O :
+
+* Time O(m+n) .
+* Space O(n) .
