@@ -2,6 +2,10 @@ package Hash.Table;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import static Hash.Table.RepeatedWord.repeatedWord;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -32,5 +36,20 @@ class AppTest{
                 HashTable<String,Integer> hashTable= new HashTable<>();
                 assertEquals("a" ,repeatedWord(string));
         }
-
+        @Test
+        public void test_leftWithSomeJoins(){
+                HashMap h1 = new HashMap();
+                h1.put("Shamikh", "rami"); //
+                h1.put("im", "angery"); //
+                HashMap h2 = new HashMap();
+                h2.put("Shamikh", "quraan");
+                h2.put("ana", "what");
+                h2.put("He", "sham");
+                List<String> list = new ArrayList<>();
+                list.add("guide: usher, null");
+                list.add("shamikh: rami, quraan");
+                assertEquals( list ,  HashLeftJoin.HashleftJoin(h1, h2));
         }
+
+
+}
