@@ -3,6 +3,8 @@
  */
 package graph;
 import java.util.HashSet;
+import java.util.LinkedList;
+
 public class App {
     public static void main(String[] args) {
 
@@ -29,7 +31,23 @@ public class App {
         one.addNeighbor(tow);
         one.addNeighbor(three);
         for (Object neighbor : one.neighbors) {
-            System.out.println("neighbor of one: "+one.neighbors);
+            System.out.println("neighbor of one: " + one.neighbors);
         }
+
+            Graph newGraph = new Graph();
+            Node firstOne = newGraph.addNode("shamikh");
+            Node secondOne = newGraph.addNode("ahmad");
+            Node thirdOne = newGraph.addNode("aya");
+            shamikh.addNeighbor(ahmad, 60);
+            shamikh.addNeighbor(aya, 55);
+            LinkedList<Node> newList = new LinkedList<>();
+            newList.add(shamikh);
+            newList.add(ahmad);
+            newList.add(aya);
+        System.out.println("new Graph after applied breadthFirst: " +  newGraph.breadthFirstSearch(shamikh));
+        System.out.println("newList after inserting elements : " +  newGraph.breadthFirstSearch(shamikh));
+
+
     }
+
 }
