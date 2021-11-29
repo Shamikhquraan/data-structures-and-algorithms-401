@@ -4,6 +4,7 @@ package graph;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;
+import java.util.LinkedList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -86,5 +87,19 @@ class AppTest {
         assertEquals(expected.size(), shamikh.neighbors.size());
     }
 
+    @Test
+    public void breadthFirstTest(){
+        Graph newGraph = new Graph();
+        Node shamikh = newGraph.addNode("shamikh");
+        Node ahmad = newGraph.addNode("ahmad");
+        Node aya = newGraph.addNode("aya");
+        shamikh.addNeighbor(ahmad, 60);
+        shamikh.addNeighbor(aya, 55);
+        LinkedList<Node> nList = new LinkedList<>();
+        nList.add(shamikh);
+        nList.add(ahmad);
+        nList.add(aya);
+        assertEquals( nList, newGraph.breadthFirstSearch(shamikh));
+    }
 
 }

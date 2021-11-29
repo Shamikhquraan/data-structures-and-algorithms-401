@@ -22,6 +22,28 @@ public class Graph<T> {
     }
     public void getEdges(String[] input){
     }
+    @SuppressWarnings("unchecked")
+    public static LinkedList<Node> breadthFirstSearch(Node oneNode){
+        LinkedList finaList = new LinkedList();
+        HashSet<Node> comingVar = new HashSet<>();
+        if(oneNode == null){
+            throw new NullPointerException("Cannot be null");
+        }
+        Queue queue  = new LinkedList();
+        queue.add(oneNode);
+        comingVar.add(oneNode);
+        while(!queue.isEmpty()){
+            Node tempNode = (Node) queue.remove();
+            finaList.add(tempNode);
+            for(Edge neighbor: (HashSet<Edge>) tempNode.neighbors){
+                if(!comingVar.contains(neighbor.node)){
+                    queue.add(neighbor.node);
+                    comingVar.add(neighbor.node);
+                }
+            }
+        }
+        return finaList;
+    }
 
     public HashSet<Node<T>>getNodes(){
         return this.vertices;

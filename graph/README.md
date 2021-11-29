@@ -139,3 +139,68 @@ class AppTest {
 ## API:
 - addNode() Space: O(|v| + |e|) Time: O(1).
 - addEdge() Space: O(|v| + |e|) Time: O(1)
+
+
+
+
+
+# Graph traversal/ Breadth first
+### Challenge:
+
+-Write the following method for the Graph class:
+**breadth first Arguments:** Node Return: A collection of nodes in the order they were visited. Display the collection.
+
+
+## Solution :
+
+![](breadthFirstGraph.png)
+
+
+## Code:
+
+public static LinkedList<Node> breadthFirstSearch(Node oneNode){
+        LinkedList finaList = new LinkedList();
+        HashSet<Node> comingVar = new HashSet<>();
+        if(oneNode == null){
+            throw new NullPointerException("Cannot be null");
+        }
+        Queue queue  = new LinkedList();
+        queue.add(oneNode);
+        comingVar.add(oneNode);
+        while(!queue.isEmpty()){
+            Node tempNode = (Node) queue.remove();
+            finaList.add(tempNode);
+            for(Edge neighbor: (HashSet<Edge>) tempNode.neighbors){
+                if(!comingVar.contains(neighbor.node)){
+                    queue.add(neighbor.node);
+                    comingVar.add(neighbor.node);
+                }
+            }
+        }
+        return finaList;
+    }
+
+
+## Test :
+
+ public void breadthFirstTest(){
+        Graph newGraph = new Graph();
+        Node shamikh = newGraph.addNode("shamikh");
+        Node ahmad = newGraph.addNode("ahmad");
+        Node aya = newGraph.addNode("aya");
+        shamikh.addNeighbor(ahmad, 60);
+        shamikh.addNeighbor(aya, 55);
+        LinkedList<Node> nList = new LinkedList<>();
+        nList.add(shamikh);
+        nList.add(ahmad);
+        nList.add(aya);
+        assertEquals( nList, newGraph.breadthFirstSearch(shamikh));
+    }
+
+
+
+## Approach and Efficeincy:
+- O(V+E) for time , where V is the num of vertices and E is num of edges.
+
+## Edge cases:
+- only on node in the graph.
