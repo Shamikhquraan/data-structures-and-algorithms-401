@@ -158,45 +158,136 @@ class AppTest {
 
 ## Code:
 
-public class BusinessTrip {
-    public String tripCost(Graph graph , List<String> cites){
-        Integer cost = 0 ;
-        for (int i = 0 ; i < cites.size()-1 ; i++){
-            Vertex<String> source = new Vertex<>(cites.get(i));
-            Vertex<String> dest = new Vertex<>(cites.get(i+1));
-            if (graph.getWeightedAdjVertices().get(source).get(dest) != null)
-                 cost += graph.getWeightedAdjVertices().get(source).get(dest) ;
+public static LinkedList<Node> breadthFirstSearch(Node oneNode){
+        LinkedList finaList = new LinkedList();
+        HashSet<Node> comingVar = new HashSet<>();
+        if(oneNode == null){
+            throw new NullPointerException("Cannot be null");
         }
-        return cost > 0 ? "True, $" + cost : "False, $" + cost ;
+        Queue queue  = new LinkedList();
+        queue.add(oneNode);
+        comingVar.add(oneNode);
+        while(!queue.isEmpty()){
+            Node tempNode = (Node) queue.remove();
+            finaList.add(tempNode);
+            for(Edge neighbor: (HashSet<Edge>) tempNode.neighbors){
+                if(!comingVar.contains(neighbor.node)){
+                    queue.add(neighbor.node);
+                    comingVar.add(neighbor.node);
+                }
+            }
+        }
+        return finaList;
+    }
+
+
+## Test :
+
+ public void breadthFirstTest(){
+        Graph newGraph = new Graph();
+        Node shamikh = newGraph.addNode("shamikh");
+        Node ahmad = newGraph.addNode("ahmad");
+        Node aya = newGraph.addNode("aya");
+        shamikh.addNeighbor(ahmad, 60);
+        shamikh.addNeighbor(aya, 55);
+        LinkedList<Node> nList = new LinkedList<>();
+        nList.add(shamikh);
+        nList.add(ahmad);
+        nList.add(aya);
+        assertEquals( nList, newGraph.breadthFirstSearch(shamikh));
+    }
+
+
+
+## Approach and Efficeincy:
+- O(V+E) for time , where V is the num of vertices and E is num of edges.
+
+## Edge cases:
+- only on node in the graph.
+
+
+
+## Business Trip:
+## Challenge :
+- Write a function called business trip Arguments: graph, array of city names Return: cost or null Determine whether the trip is possible with direct flights, and how much it would cost.
+
+
+## Solution:
+
+![](Business.png)
+
+
+## Code:
+
+
+ public BusinessTrip(Graph<String> graphNew, String[] citys2) {
+        return;
+    }
+
+    public static <T> String businessTrip(Graph graph, String[] cities) {
+        int cost = 0;
+        if (cities.length <= 1){
+            return null;
+        }
+        for(int i = 0 ; i < cities.length -1; i++) {
+            Node sourceNode = graph.getNode(cities[i]);
+            Node destNode = graph.getNode(cities[i+1]);
+            Edge edge = getEdge(sourceNode, destNode);
+            if ( edge == null)
+                return "False, $0";
+            cost += edge.weight;
+        }
+        return "True, $"+cost;
+    }
+
+    public Node getNode(T value) {
+        Node arr[] = new Node[vertices.size()];
+        int n=0;
+        for(Node ele:vertices){
+            arr[n++] = ele;
+        }
+        for(int i = 0 ; i < arr.length -1; i++) {
+            if (arr[i].data == value) {
+                return arr[i];
+            }
+        }
+        return null;
+    }
+    private static Edge getEdge(Node sourceNode, Node destNode) {
+        boolean indexOfEdge = isThereDirectFlightbetweenTheCity(sourceNode, destNode);
+        if(indexOfEdge == false)
+            return null;
+        else {
+            Edge[] arr =  toArray(sourceNode.neighbors);
+            for(int i = 0 ; i <= arr.length -1; i++) {
+                if (arr[i].node == destNode) {
+                    return arr[i];
+                }
+            }
+            return null;
+        }
+    }
+
+    private static boolean isThereDirectFlightbetweenTheCity(Node sourceNode, Node destNode) {
+        Edge[] arr =  toArray(sourceNode.neighbors);
+        for(int i = 0 ; i <= arr.length -1; i++) {
+            if (arr[i].node == destNode) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static Edge[] toArray(HashSet h) {
+        Edge arr[] = new Edge[h.size()];
+        int n=0;
+        for(Object ele : h){
+            arr[n++] = (Edge) ele;
+        }
+        return arr;
     }
 }
 
-
-## Test:
-
-
-    @DisplayName("test a direct business trip")
-    @Test
-    public void testDirectTrip(){
-        BusinessTrip trip = new BusinessTrip();
-        Graph graph = new Graph();
-
-        graph.addVertex("Amman") ;
-        graph.addVertex("Mafraq") ;
-        graph.addVertex("Zarqa");
-        graph.addVertex("Irbid");
-
-        graph.addWeightedEdge("Mafraq" , "Zarqa" , 10);
-        graph.addWeightedEdge("Mafraq" , "Amman" , 35);
-        graph.addWeightedEdge("Amman" , "Zarqa" , 15);
-        graph.addWeightedEdge("Mafraq" ,"Irbid" , 17);
-
-        List<String> cities = new ArrayList<>();
-        cities.add("Mafraq");
-        cities.add("Zarqa") ;
-
-        assertEquals(trip.tripCost(graph , cities) , "True, $10" );
-    }
 
 ## Approach and Efficiency:
 - O(n^2) for time O(n) for space.
