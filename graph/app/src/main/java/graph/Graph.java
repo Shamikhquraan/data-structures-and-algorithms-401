@@ -75,11 +75,9 @@ public class Graph<T> {
         Node node1 = getNode(value);
         return vertices.contains(node1);
     }
-
     public HashSet<Edge> getNeighbors(Node<T> node){
         return node.neighbors;
     }
-
     public int getSize(){
         return this.vertices.size();
     }
