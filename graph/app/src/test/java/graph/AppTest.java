@@ -1,13 +1,8 @@
-
 package graph;
-
 import org.junit.jupiter.api.Test;
-
 import java.util.HashSet;
 import java.util.LinkedList;
-
 import static org.junit.jupiter.api.Assertions.*;
-
 class AppTest {
     @Test
     public void addingNode() {
@@ -102,4 +97,33 @@ class AppTest {
         assertEquals( nList, newGraph.breadthFirstSearch(shamikh));
     }
 
-}
+
+    @Test
+    public void businessTrpGraphMoreThanTowParamet(){
+    Graph <String> graphNew= new Graph();
+        graphNew.addNode("Amman");
+        graphNew.addNode("Zarqa");
+        graphNew.addNode("Aqba");
+        graphNew.addNode("Maldiv");
+        graphNew.addNode("Korea");
+        graphNew.addNode("Iran");
+        graphNew.addEDdgeNewG("Amman","swailh",50);
+        graphNew.addEDdgeNewG("Zarqa","capCity",82);
+        graphNew.addEDdgeNewG("Irbid","Taybah",99);
+        graphNew.addEDdgeNewG("Salt","BalQa",42);
+        graphNew.addEDdgeNewG("Jaresh","Sarw",37);
+
+        graphNew.addEDdgeNewG("Maldiv","Korea",26);
+        graphNew.addEDdgeNewG("Korea","Iran",105);
+        graphNew.addEDdgeNewG("Korea","Iran",105);
+        graphNew.addEDdgeNewG("Monstroplolis","Naboo",73);
+        graphNew.addEDdgeNewG("Narnia","Naboo",70);
+
+    Node  Amman =  graphNew.getNode("Amman");
+    Node  Salt =  graphNew.getNode("Salt");
+    Node Jaresh =  graphNew.getNode("Jaresh");
+    Node  Ajloun =  graphNew.getNode("Ajloun");
+
+    String[] placeOne = {"Istanbul", "Egge"};
+    String[] placeTow={"Amman", "Meat"};
+}}

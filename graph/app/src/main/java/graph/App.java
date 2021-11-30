@@ -4,7 +4,6 @@
 package graph;
 import java.util.HashSet;
 import java.util.LinkedList;
-
 public class App {
     public static void main(String[] args) {
 
@@ -15,14 +14,13 @@ public class App {
         Node walaa = graph.addNode("walaa");
         System.out.println("Graph: "+graph.getNodes());
         System.out.println("Size of graph is :"+graph.getSize());
-        System.out.println(graph.addEdge(shamikh, ahmad));
+        System.out.println(graph.addEdge(shamikh,ahmad));
 
         HashSet<Node> expected = new HashSet<>();
         expected.add(shamikh);
         expected.add(ahmad);
         expected.add(aya);
         System.out.println("Graph: "+graph.getNodes());
-
 
         Graph graph2 = new Graph();
         Node one = graph.addNode("one");
@@ -47,7 +45,34 @@ public class App {
         System.out.println("new Graph after applied breadthFirst: " +  newGraph.breadthFirstSearch(shamikh));
         System.out.println("newList after inserting elements : " +  newGraph.breadthFirstSearch(shamikh));
 
+        Graph <String> graphNew= new Graph();
 
+        graphNew.addNode("Amman");
+        graphNew.addNode("Zarqa");
+        graphNew.addNode("Aqba");
+        graphNew.addNode("Maldiv");
+        graphNew.addNode("Korea");
+        graphNew.addNode("Iran");
+
+        graphNew.addEDdgeNewG("Amman","swailh",150);
+        graphNew.addEDdgeNewG("Zarqa","capCity",82);
+        graphNew.addEDdgeNewG("Irbid","Taybah",99);
+        graphNew.addEDdgeNewG("Salt","BalQa",42);
+        graphNew.addEDdgeNewG("Jaresh","Sarw",37);
+
+        graphNew.addEDdgeNewG("Maldiv","Korea",26);
+        graphNew.addEDdgeNewG("Korea","Iran",105);
+        graphNew.addEDdgeNewG("Korea","Iran",105);
+        graphNew.addEDdgeNewG("Monstroplolis","Naboo",73);
+        graphNew.addEDdgeNewG("Narnia","Naboo",250);
+
+        Node  Amman =  graphNew.getNode("Amman");
+        Node  Salt =  graphNew.getNode("Salt");
+        Node Jaresh =  graphNew.getNode("Jaresh");
+        Node  Ajloun =  graphNew.getNode("Ajloun");
+
+        String[] placeOne = {"Istanbul", "Egge"};
+        String[] placeTow={"Amman", "Meat"};
+        System.out.println("New Graph For Buseniss trip:"+graphNew);
     }
-
 }

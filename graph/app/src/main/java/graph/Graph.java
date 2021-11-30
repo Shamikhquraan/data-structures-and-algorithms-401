@@ -1,6 +1,5 @@
 package graph;
 import java.util.*;
-
 public class Graph<T> {
     public HashSet<Node<T>> vertices;
     public Graph(){
@@ -12,6 +11,7 @@ public class Graph<T> {
         this.vertices.add(node);
         return node;
     }
+
     public boolean addEdge(Node<T> source, Node<T> destination){
         if(this.vertices.contains(source) && this.vertices.contains(destination)){
             this.vertices.add(source);
@@ -20,8 +20,7 @@ public class Graph<T> {
         }
         return false;
     }
-    public void getEdges(String[] input){
-    }
+
     @SuppressWarnings("unchecked")
     public static LinkedList<Node> breadthFirstSearch(Node oneNode){
         LinkedList finaList = new LinkedList();
@@ -47,6 +46,34 @@ public class Graph<T> {
 
     public HashSet<Node<T>>getNodes(){
         return this.vertices;
+    }
+
+    public Node getNode(T value) {
+        Node arr[] = new Node[vertices.size()];
+        int n=0;
+        for(Node ele:vertices){
+            arr[n++] = ele;
+        }
+        for(int i = 0 ; i < arr.length -1; i++) {
+            if (arr[i].data == value) {
+                return arr[i];
+            }
+        }
+        return null;
+    }
+
+    public void addEDdgeNewG( T value1, T value2, int weight) {
+        if( isNodeExist(value1) && isNodeExist(value2)){
+            Node node1 = getNode(value1);
+            Node node2 = getNode(value2);
+            node1.addNeighbor(node2,weight);
+            node2.addNeighbor(node1,weight);
+        }
+    }
+
+    private boolean isNodeExist(T value){
+        Node node1 = getNode(value);
+        return vertices.contains(node1);
     }
 
     public HashSet<Edge> getNeighbors(Node<T> node){
