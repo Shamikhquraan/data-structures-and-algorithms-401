@@ -1,5 +1,7 @@
 package graph.LinkedList;
 
+import java.util.HashSet;
+
 public class Node<T> {
     private Node<T> next;
     private final T data;
