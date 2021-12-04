@@ -26,5 +26,15 @@ public class App {
         graph.addEdge("F","H");
 
         System.out.println(graph.dft("A").toString());
+
+        Graph graph1 = new Graph();
+Node n1 =new Node("Metroville");
+        graph1.addVertex("Pandora");
+        graph1.addVertex((String) n1.data);
+        graph1.addVertex("Monstroplolis");
+        graph1.addVertex("Narnia");
+        graph1.addVertex("Naboo");
+
+        DepthGraph.depthFirstSearch(n1);
     }
 }

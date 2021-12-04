@@ -1,6 +1,7 @@
 package graph.StackLinkedList;
 
 public class Node<T> {
+    public Object neighbor;
     private Node<T> next;
     private final T data;
     public Node(T data) {
